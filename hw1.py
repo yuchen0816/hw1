@@ -54,7 +54,7 @@ data5 = []
 target_data5 = list(filter(lambda item: item['station_id'] == 'C0X260', data))
 for row in target_data5:
    data5.append(row['TEMP'])
-ans.append([row['station_id'], max(data1)])
+ans.append([row['station_id'], max(data5)])
 
 # Retrive ten data points from the beginning.
 #target_data = data[:]
